@@ -8,8 +8,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-geist_sans: var(--font-geist-sans);
+  --font-geist_mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat);
+  --font-raleway: var(--font-raleway);
+  --font-nunito: var(--font-nunito);
+  --font-quicksand: var(--font-quicksand);
+  --font-architects-daughter: var(--font-architects-daughter);
+  --font-comfortaa: var(--font-comfortaa);
+  --font-pretendard: var(--font-pretendard);
+  --font-suit: var(--font-suit);
+  --font-nanum-square-neo: var(--font-nanum-square-neo);
+  --font-paperlogy: var(--font-paperlogy);
+  --font-s-core-dream: var(--font-s-core-dream);
 }
 
 @utility scrollbar-hidden {
