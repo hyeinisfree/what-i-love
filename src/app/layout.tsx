@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="ko">
       <body className="mx-auto flex h-screen max-w-md flex-col">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="scrollbar-hidden flex-grow overflow-y-auto">
+          {children}
+        </main>
         <BottomNavBar />
       </body>
     </html>
