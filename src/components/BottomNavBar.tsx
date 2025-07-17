@@ -35,7 +35,7 @@ export const BottomNavBar = () => {
   ];
 
   return (
-    <nav className="min-h-18 flex items-center justify-center">
+    <nav className="min-h-18 font-montserrat flex items-center justify-center">
       <ul className="grid h-full w-full cursor-pointer grid-cols-5">
         {links.map((item, index) => {
           const isActive = pathname === item.link;
@@ -48,11 +48,11 @@ export const BottomNavBar = () => {
                 className="flex h-full flex-col items-center justify-center gap-1 p-2"
               >
                 <Icon
-                  className={`size-6 ${isActive ? "text-black" : "text-gray-600"}`}
+                  className="size-6 text-stone-600"
                   fill={isActive ? "currentColor" : "none"}
                   strokeWidth={isActive ? 0 : 2}
                 />
-                <span className="text-xs font-light">{item.title}</span>
+                <span className="text-xs">{item.title}</span>
               </Link>
             </li>
           );
