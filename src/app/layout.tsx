@@ -35,7 +35,7 @@ export default function RootLayout({
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${raleway.variable} ${nunito.variable} ${quicksand.variable} ${architectsDaughter.variable} ${comfortaa.variable} ${pretendard.variable} ${suit.variable} ${nanumSquareNeo.variable} ${paperlogy.variable} ${sCoreDream.variable}`}
     >
-      <body className="mx-auto flex h-screen max-w-md flex-col">
+      <body className="mx-auto flex h-screen max-w-md flex-col shadow-lg">
         <Header />
         <main className="scrollbar-hidden flex-grow overflow-y-auto">
           {children}

@@ -35,7 +35,7 @@ export const BottomNavBar = () => {
   ];
 
   return (
-    <nav className="min-h-18 font-montserrat flex items-center justify-center">
+    <nav className="min-h-18 font-montserrat flex items-center justify-center border-t border-stone-100">
       <ul className="grid h-full w-full cursor-pointer grid-cols-5">
         {links.map((item, index) => {
           const isActive = pathname === item.link;
