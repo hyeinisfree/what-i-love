@@ -1,15 +1,8 @@
 import Image from "next/image";
-
-export interface ProfileData {
-  profileImage: string;
-  following: number;
-  followers: number;
-  nickname: string;
-  description: string;
-}
+import { UserProfile } from "@/types/user";
 
 interface ProfileProps {
-  profile: ProfileData;
+  profile: UserProfile;
 }
 
 export default function Profile({ profile }: ProfileProps) {
