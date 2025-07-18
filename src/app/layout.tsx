@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { Providers } from "@/providers/Providers";
+
 import { Header } from "@/components/Header";
 import { BottomNavBar } from "@/components/BottomNavBar";
 
@@ -36,11 +38,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${raleway.variable} ${nunito.variable} ${quicksand.variable} ${architectsDaughter.variable} ${comfortaa.variable} ${pretendard.variable} ${suit.variable} ${nanumSquareNeo.variable} ${paperlogy.variable} ${sCoreDream.variable}`}
     >
       <body className="mx-auto flex h-screen max-w-md flex-col shadow-lg">
-        <Header />
-        <main className="scrollbar-hidden flex-grow overflow-y-auto">
-          {children}
-        </main>
-        <BottomNavBar />
+        <Providers>
+          <Header />
+          <main className="scrollbar-hidden flex-grow overflow-y-auto">
+            {children}
+          </main>
+          <BottomNavBar />
+        </Providers>
       </body>
     </html>
   );

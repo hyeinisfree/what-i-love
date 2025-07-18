@@ -1,7 +1,13 @@
 import Image from "next/image";
 
+interface ContentGridItem {
+  id: string;
+  name: string;
+  // If image source was part of the item, it would be like: imageUrl: string;
+}
+
 interface ContentGridProps {
-  items: any[];
+  items: ContentGridItem[];
 }
 
 export default function ContentGrid({ items }: ContentGridProps) {

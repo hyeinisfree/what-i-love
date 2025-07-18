@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export interface ProfileData {
-  profileImage: any;
+  profileImage: string;
   following: number;
   followers: number;
   nickname: string;

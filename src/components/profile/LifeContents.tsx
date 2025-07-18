@@ -1,7 +1,13 @@
 import Image from "next/image";
 
+interface LifeContentItem {
+  id: string | number;
+  name: string;
+  // Add other properties if they exist in your content objects
+}
+
 interface ContentProps {
-  contents: any[];
+  contents: LifeContentItem[];
 }
 
 export default function LifeContents({ contents }: ContentProps) {
